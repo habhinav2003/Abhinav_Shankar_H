@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Abhinav Shankar H: AI/ML and computer vision researcher in Ottawa. Ericsson AI/ML Research Intern, MScAC (AI) at the University of Toronto.">
+<title>Abhinav Shankar H</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="mark">AI / ML · Computer Vision</div>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work"><span>W</span>Selected work</a></li>
+        <li><a href="#experience"><span>E</span>Experience</a></li>
+        <li><a href="#publications"><span>P</span>Publications</a></li>
+        <li><a href="#skills"><span>S</span>Skills</a></li>
+        <li><a href="#education"><span>U</span>Education</a></li>
+        <li><a href="#contact"><span>C</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="status">Open to full-time AI/ML roles, Ottawa</div>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/habhinav/">LinkedIn</a>
+      <a href="https://github.com/habhinav2003">GitHub</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-text">
+        <div class="eyebrow">Ottawa · MScAC (AI), University of Toronto</div>
+        <h1>Abhinav Shankar H</h1>
+        <p class="lede">I build computer vision and machine learning pipelines that turn messy real-world images into decisions engineers can trust: <em>radio test dashboards</em> at Ericsson, <em>orthopaedic X-rays</em> in clinical research.</p>
+        <p>AI/ML Research Intern at Ericsson Canada, Ottawa. Previously ISRO SHAR, CSIR National Physical Laboratory, and a Teaching Assistant in Computer Science at the University of Toronto.</p>
+      </div>
+      <figure class="scope">
+        <canvas id="iq" width="480" height="480" aria-label="Animated 16-QAM constellation diagram: received symbols scatter around sixteen ideal points"></canvas>
+        <figcaption><span>16-QAM constellation · I/Q</span><span id="evm">EVM —</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="eyebrow">Selected work</div>
+      <div class="work">
+        <article class="case lead">
+          <div class="meta"><span>Ericsson Canada</span><span>2026 – now</span></div>
+          <div class="body">
+            <h3>Automated defect diagnosis for radio test dashboards</h3>
+            <p>The second stage of a two-stage radio QA system. When a capture from a spectrum-analyzer dashboard is flagged, the pipeline diagnoses which of 11 defect types it shows, from high EVM and phase error to early or late switching and spectrum roll-off. Each defect is checked only on the panels an RF engineer would look at.</p>
+            <p>Failure analysis on uplink and downlink captures showed the high-EVM misses were a threshold-calibration problem rather than domain shift. I also built the tools engineers use around the models: a Streamlit app for running the pipeline and a browser review tool that syncs manual labels with model predictions.</p>
+            <ul class="facts">
+              <li><strong>11</strong> defect classes</li>
+              <li><strong>789</strong> UL/DL captures analysed</li>
+              <li>AUC <strong>0.97</strong> on high EVM</li>
+              <li>YOLO · SAM2 · HDBSCAN · Random Forest</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span>Unicorn Medics (UK)</span><span>2023 – now</span></div>
+          <div class="body">
+            <h3>Orthopaedic implant identification from X-rays</h3>
+            <p>CNN and OpenCV pipelines that identify implants from radiographs, improving classification accuracy and cutting the time clinicians spend on manual review. Two papers are under review at the Indian Journal of Orthopaedics.</p>
+            <ul class="facts"><li>CNN</li><li>OpenCV</li><li>Medical imaging</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span>University of Toronto</span><span>Graduate project</span></div>
+          <div class="body">
+            <h3>Frequency-aware under-display camera restoration</h3>
+            <p>Spectral distillation from a MambaIR teacher into a UNet student, aiming at restoration quality that holds up under low-latency deployment.</p>
+            <ul class="facts"><li>MambaIR</li><li>UNet</li><li>Knowledge distillation</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span>University of Toronto</span><span>Graduate project</span></div>
+          <div class="body">
+            <h3>Spatial causal inference with foundation models</h3>
+            <p>DINO-v3 image embeddings fed to CausalPFN to estimate spatially varying treatment effects (CATE).</p>
+            <ul class="facts"><li>DINO-v3</li><li>CausalPFN</li><li>Causal ML</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span>ISRO SHAR</span><span>2024</span></div>
+          <div class="body">
+            <h3>Wind-speed forecasting for launch planning</h3>
+            <p>RNN, LSTM and GRU models predicting wind speed for atmospheric and aerospace mission planning.</p>
+            <ul class="facts"><li>Time series</li><li>LSTM · GRU</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span>SRMIST</span><span>Patent filed</span></div>
+          <div class="body">
+            <h3>Automated attendance tracker</h3>
+            <p>An ultrasonic biometric attendance system, built as an undergraduate project.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="eyebrow">Experience</div>
+      <ol class="timeline">
+        <li>
+          <time>May 2026 – now</time>
+          <div><div class="role">AI/ML Research Intern</div><div class="org">Ericsson Canada, Ottawa</div>
+          <p>AI/ML pipelines for radio-system QA: image analysis, clustering, anomaly detection and lightweight computer vision.</p></div>
+        </li>
+        <li>
+          <time>Sep 2025 – Apr 2026</time>
+          <div><div class="role">Teaching Assistant</div><div class="org">Dept. of Computer Science, University of Toronto</div>
+          <p>Led tutorials for undergraduate CS courses, graded assignments and exams, and mentored students.</p></div>
+        </li>
+        <li>
+          <time>Aug – Oct 2024</time>
+          <div><div class="role">Project Intern</div><div class="org">ISRO SHAR, Sriharikota</div>
+          <p>Recurrent models for wind-speed prediction in mission planning.</p></div>
+        </li>
+        <li>
+          <time>Jun – Aug 2023</time>
+          <div><div class="role">Summer Research Fellow</div><div class="org">CSIR National Physical Laboratory, Delhi</div>
+          <p>Automated multimeter data acquisition in LabVIEW with real-time visualisation.</p></div>
+        </li>
+        <li>
+          <time>Jan 2023 – now</time>
+          <div><div class="role">Research Engineer</div><div class="org">Unicorn Medics (UK)</div>
+          <p>Implant identification from X-rays with CNN and OpenCV pipelines.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="eyebrow">Publications</div>
+      <ul class="pubs">
+        <li>
+          <span class="title"><a href="https://ieeexplore.ieee.org/document/10883090">AI-Driven Smart Space Allocation Framework</a></span>
+          <span>A. Shankar H., R. Mohanprasath, P.R.A., G.M. Kumar</span>
+          <span class="venue">ICMCSI 2025 · IEEE</span>
+        </li>
+        <li>
+          <span class="title"><a href="https://ieeexplore.ieee.org/document/10425870">Enhancing Internet Security Through Adaptive Access Control Mechanisms</a></span>
+          <span>R. Mohanprasath, H. Abhinav Shankar, M. Kanchana</span>
+          <span class="venue">ICIMIA 2023 · IEEE</span>
+        </li>
+        <li>
+          <span class="title">Two papers on orthopaedic implant classification</span>
+          <span class="venue">Under review · Indian Journal of Orthopaedics</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="eyebrow">Skills</div>
+      <div class="skills">
+        <div><h3>Machine learning</h3><p>PyTorch, TensorFlow, Keras, scikit-learn, clustering (HDBSCAN, PCA), anomaly detection, time-series models</p></div>
+        <div><h3>Computer vision</h3><p>OpenCV, YOLO, SAM2, DINO-v3, OCR, image restoration, medical imaging</p></div>
+        <div><h3>Engineering</h3><p>Python, C, C++, Bash, HTML/JavaScript, Git, Linux, CUDA, Streamlit, LabVIEW</p></div>
+        <div><h3>Domains</h3><p>RF and radio test data (EVM, constellation, spectrum), orthopaedic imaging, aerospace forecasting</p></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="eyebrow">Education</div>
+      <div class="edu">
+        <div><span class="when">2025 – now</span><h3>MSc in Applied Computing (AI)</h3><span>University of Toronto, St. George</span></div>
+        <div><span class="when">2021 – 2025</span><h3>B.Tech in Computer Science</h3><span>SRM Institute of Science and Technology · CGPA 9.77 / 10</span></div>
+      </div>
+      <ul class="honours">
+        <li>Full SRM Merit Scholarship, 2021–2025 (SRMJEE rank 362)</li>
+        <li>Runner-up: APP FRENZY 2.0 Hackathon 2023, SRMIST Smart Campus Hackathon 2023, Quantum Quest Expo 2024</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="eyebrow">Contact</div>
+      <div class="contact-block">
+        <h2>Get in touch</h2>
+        <div class="email-row">
+          <code id="email">habhinav2003@gmail.com</code>
+          <button class="copy" id="copyBtn" type="button">Copy email</button>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/habhinav/">LinkedIn · habhinav</a>
+          <a href="https://github.com/habhinav2003">GitHub · habhinav2003</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>Abhinav Shankar H · Ottawa, Ontario · Updated October 2026</footer>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
